@@ -1,5 +1,5 @@
 /*!
- * sass-grids Copyright (C) by Nils Sommer, 2015
+ * buttons, Copyright (C) by Nils Sommer, 2015
  *
  * Basic grunt config to compile scss files to css files.
  */
