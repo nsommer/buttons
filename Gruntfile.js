@@ -32,11 +32,17 @@ module.exports = function (grunt) {
           ext: '.min.css'
         }]
       }
+    },
+
+    watch: {
+      files: '**/*.scss',
+      tasks: ['dist']
     }
   })
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('dist', ['sass', 'cssmin']);
 }
