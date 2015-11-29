@@ -1,0 +1,17 @@
+//
+// The popular cleafix hack.
+//
+// See: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

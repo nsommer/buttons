@@ -1,0 +1,36 @@
+//
+// Button groups.
+//
+
+.button-group {
+  @include clearfix;
+
+  > .button {
+    border-radius: 0;
+    float: left;
+  }
+
+  > .button + .button {
+    margin-left: -1px;
+  }
+
+  > .button:first-child {
+    border-top-left-radius:    $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  > .button:last-child {
+    border-top-right-radius:    $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  > .button-pilled:first-child {
+    border-top-left-radius:    50em;
+    border-bottom-left-radius: 50em;
+  }
+
+  > .button-pilled:last-child {
+    border-top-right-radius:    50em;
+    border-bottom-right-radius: 50em;
+  }
+}
