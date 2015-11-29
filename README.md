@@ -1,4 +1,4 @@
-CSS button framework
+CSS button framework [![Build Status](https://travis-ci.org/nsommer/buttons.svg)](https://travis-ci.org/nsommer/buttons)
 =====================
 This project aims to be the ultimative CSS button framework, which means it provides:
 
