@@ -16,10 +16,10 @@ Simply include the stylesheet in the head section of your HTML.
 Then, you can use the styles to make your links, inputs and buttons super awesome!
 
 ```html
-<a href="#" class="button">Link</a>
-<input type="button" class="button" value="Input">
-<button type="button" class="button">Button</button>
-<button type="submit" class="button">Submit button</button>
+<a href="#" class="button button-default">Link</a>
+<input type="button" class="button button-default" value="Input">
+<button type="button" class="button button-default">Button</button>
+<button type="submit" class="button button-default">Submit button</button>
 ```
 
 ## License

@@ -1,0 +1,25 @@
+//
+// The look and feel of the different variants of buttons.
+//
+
+// Standard variants.
+
+@include button-variant("default", $default-background, black);
+@include button-variant("primary", $primary-background, white);
+@include button-variant("success", $success-background, white);
+@include button-variant("warning", $warning-background, white);
+@include button-variant("danger", $danger-background, white);
+
+.button-primary,
+.button-outline-primary {
+  font-weight: $font-weight-primary;
+}
+
+
+
+// Outline buttons.
+
+@include outline-button("primary", $primary-background);
+@include outline-button("success", $success-background);
+@include outline-button("warning", $warning-background);
+@include outline-button("danger", $danger-background);

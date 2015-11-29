@@ -1,0 +1,25 @@
+//
+// Mixins to generate styles for the button variants.
+//
+
+@mixin button-variant($name, $theme-color, $text-color) {
+  .button-#{$name} {
+    color: $text-color;
+    background-color: $theme-color;
+    border-color: darken($theme-color, $gradient-modifier);
+
+    @if $gradients {
+      background: linear-gradient(to top, $theme-color 0%, lighten($theme-color, $gradient-modifier) 100%);
+    }
+
+    &:hover,
+    &:active {
+      background-color: darken($theme-color, $gradient-modifier);
+      border-color: darken($theme-color, $gradient-modifier * 2);
+
+      @if $gradients {
+        background: linear-gradient(to top, $theme-color 0%, darken($theme-color, $gradient-modifier) 100%);
+      }
+    }
+  }
+}

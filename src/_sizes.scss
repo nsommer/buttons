@@ -1,0 +1,13 @@
+//
+// Size modifiers.
+//
+
+.button-small {
+  font-size: $font-size-small;
+  padding: $padding-vertical-small $padding-horizontal-small;
+}
+
+.button-large {
+  font-size: $font-size-large;
+  padding: $padding-vertical-large $padding-horizontal-large;
+}

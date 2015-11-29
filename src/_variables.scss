@@ -1,0 +1,54 @@
+//
+// Any configuration goes here.
+//
+
+// Base values:
+
+$font-size: 14px;
+$font-weight: normal;
+$line-height: 1.25;
+
+$text-color: #333;
+$background-color: white;
+
+$border-color: #ddd;
+$border: 1px solid $border-color;
+$border-radius: 4px;
+
+$padding-horizontal: 1em;
+$padding-vertical: .5em;
+
+$gradient-modifier: 10%;
+
+$font-weight-primary: bold;
+
+// Look and Feel.
+
+$default-background: #ececec;
+$default-text-color: $text-color;
+
+$primary-background: #0066ff;
+$primary-text-color: white;
+
+$success-background: #009900;
+$success-text-color: $text-color;
+
+$danger-background: #ff0000;
+$danger-text-color: $text-color;
+
+$warning-background: #ff9900;
+$warning-text-color: $text-color;
+
+// Sizes:
+
+$font-size-small:          10px;
+$padding-horizontal-small: 1em;
+$padding-vertical-small:   .5em;
+
+$font-size-large:          16px;
+$padding-horizontal-large: 1em;
+$padding-vertical-large:   .5em;
+
+// Settings:
+
+$gradients: true;

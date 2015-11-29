@@ -1,0 +1,17 @@
+//
+// Mixins to generate styles for outline buttons.
+//
+
+@mixin outline-button($name, $theme-color) {
+  .button-outline-#{$name} {
+    background-color: transparent;
+    color: $theme-color;
+    border-color: $theme-color;
+
+    &:hover,
+    &:active {
+      background-color: $theme-color;
+      color: white;
+    }
+  }
+}
