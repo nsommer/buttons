@@ -12,77 +12,186 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
+    body {
+      background-color: #ececec;
+    }
+
     .container {
-      max-width: 360px;
-      margin: 0 auto;
+      box-sizing: boder-box;
+      max-width: 480px;
+      margin: 1em auto;
+      padding: 1em;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: .5em 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    h2 {
+      margin: .5em 0;
+    }
+
+    .outline-background-block {
+      box-sizing: border-box;
+      padding: .5em;
+      width: 100%;
+      background: #3D7EAA; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    pre {
+      overflow: auto;
+      margin: 0;
     }
     </style>
   </head>
   <body>
+    <a href="https://github.com/nsommer/buttons"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
     <div class="container">
       <h1>Buttons</h1>
 
       <h2>Without styles</h2>
-      <a href="#">Link</a>
-      <input type="button" value="Input">
-      <button type="button">Button</button>
-      <button type="submit">Submit button</button>
+
+      <p>Typically, you may want to style link, input and button elements as buttons. This is how they look like in your browser natively.</p>
+
+<pre><code class="prettyprint">&lt;a href="#"&gt;Link&lt;/a&gt;
+&lt;input type="button" value="Input"&gt;
+&lt;button type="button"&gt;Button&lt;/button&gt;
+&lt;button type="submit"&gt;Submit button&lt;/button&gt;
+</code></pre>
+
+      <div class="button-container">
+        <a href="#">Link</a>
+        <input type="button" value="Input">
+        <button type="button">Button</button>
+        <button type="submit">Submit button</button>
+      </div>
 
       <h2>Default styles</h2>
-      <a href="#" class="button button-default">Link</a>
-      <input type="button" value="Input" class="button button-default">
-      <button type="button" class="button button-default">Button</button>
-      <button type="submit" class="button button-default">Submit button</button>
+<pre><code class="prettyprint">&lt;a href="#" class="button button-default"&gt;Link&lt;/a&gt;
+&lt;input type="button" value="Input" class="button button-default"&gt;
+&lt;button type="button" class="button button-default"&gt;Button&lt;/button&gt;
+&lt;button type="submit" class="button button-default"&gt;Submit button&lt;/button&gt;
+</code></pre>
+
+      <div class="button-container">
+        <a href="#" class="button button-default">Link</a>
+        <input type="button" value="Input" class="button button-default">
+        <button type="button" class="button button-default">Button</button>
+        <button type="submit" class="button button-default">Submit button</button>
+      </div>
 
       <h2>Style variants</h2>
-      <a href="#" class="button button-primary">Link</a>
-      <input type="button" value="Input" class="button button-success">
-      <button type="button" class="button button-danger">Button</button>
-      <button type="submit" class="button button-warning">Submit button</button>
+<pre><code class="prettyprint">&lt;a href="#" class="button button-primary"&gt;Primary&lt;/a&gt;
+&lt;input type="button" value="Success" class="button button-success"&gt;
+&lt;button type="button" class="button button-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="submit" class="button button-danger"&gt;Danger&lt;/button&gt;
+</code></pre>
+
+      <div class="button-container">
+        <a href="#" class="button button-primary">Primary</a>
+        <input type="button" value="Success" class="button button-success">
+        <button type="submit" class="button button-warning">Warning</button>
+        <button type="button" class="button button-danger">Danger</button>
+      </div>
 
       <h3>Outline buttons</h3>
+      <p>Outline buttons as made popular by iOS are flat buttons with high contrast and transparent backgrounds.</p>
+<pre><code class="prettyprint">&lt;a href="#" class="button button-outline-primary"&gt;Primary&lt;/a&gt;
+&lt;input type="button" value="Success" class="button button-outline-success"&gt;
+&lt;button type="button" class="button button-outline-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="submit" class="button button-outline-danger"&gt;Danger&lt;/button&gt;
+</code></pre>
+      <div class="button-container">
+        <a href="#" class="button button-outline-primary">Primary</a>
+        <input type="button" value="Success" class="button button-outline-success">
+        <button type="submit" class="button button-outline-warning">Warning</button>
+        <button type="button" class="button button-outline-danger">Danger</button>
+      </div>
 
-      <a href="#" class="button button-outline-primary">Link</a>
-      <input type="button" value="Input" class="button button-outline-success">
-      <button type="button" class="button button-outline-danger">Button</button>
-      <button type="submit" class="button button-outline-warning">Submit button</button>
+      <p>Therefore, outline buttons look great on top of backgrounds with images or gradients.</p>
+      <div class="outline-background-block">
+        <div class="button-container">
+          <a href="#" class="button button-outline-primary">Primary</a>
+          <input type="button" value="Success" class="button button-outline-success">
+          <button type="submit" class="button button-outline-warning">Warning</button>
+          <button type="button" class="button button-outline-danger">Danger</button>
+        </div>
+      </div>
 
       <h2>Pilled buttons</h2>
-      <a href="#" class="button button-primary button-pilled">Link</a>
-      <input type="button" value="Input" class="button button-success button-pilled">
-      <button type="button" class="button button-danger button-pilled">Button</button>
-      <button type="submit" class="button button-warning button-pilled">Submit button</button>
+<pre><code class="prettyprint">&lt;a href="#" class="button button-primary button-pilled"&gt;Primary&lt;/a&gt;
+&lt;input type="button" value="Success" class="button button-success button-pilled"&gt;
+&lt;button type="button" class="button button-warning button-pilled"&gt;Warning&lt;/button&gt;
+&lt;button type="submit" class="button button-danger button-pilled"&gt;Danger&lt;/button&gt;
+</code></pre>
+      <div class="button-container">
+        <a href="#" class="button button-primary button-pilled">Primary</a>
+        <input type="button" value="Success" class="button button-success button-pilled">
+        <button type="submit" class="button button-warning button-pilled">Warning</button>
+        <button type="button" class="button button-danger button-pilled">Danger</button>
+      </div>
 
       <h2>Block buttons</h2>
+      <p>Block buttons are block level elements and span to the full width available. If multiple block buttons are stacked over another (like below), a little margin is used as a spacer.</p>
+<pre><code class="prettyprint">&lt;button type="button" class="button button-default button-block"&gt;Block button&lt;/button&gt;
+</code></pre>
+<br>
       <a href="#" class="button button-default button-block">Link</a>
       <input type="button" value="Input" class="button button-default button-block">
       <button type="button" class="button button-default button-block">Button</button>
       <button type="submit" class="button button-default button-block">Submit button</button>
 
-      <h2>Small buttons</h2>
-      <a href="#" class="button button-default button-small">Link</a>
-      <input type="button" value="Input" class="button button-default button-small">
-      <button type="button" class="button button-default button-small">Button</button>
-      <button type="submit" class="button button-default button-small">Submit button</button>
-
-      <h2>Large buttons</h2>
-      <a href="#" class="button button-default button-large">Link</a>
-      <input type="button" value="Input" class="button button-default button-large">
-      <button type="button" class="button button-default button-large">Button</button>
-      <button type="submit" class="button button-default button-large">Submit button</button>
+      <h2>Button sizes</h2>
+<pre><code class="prettyprint">&lt;button type="button" class="button button-default button-small"&gt;Small button&lt;/button&gt;
+&lt;button type="button" class="button button-default"&gt;Standard button&lt;/button&gt;
+&lt;button type="button" class="button button-default"&gt;Large button&lt;/button&gt;
+</code></pre>
+      <div class="button-container">
+        <button type="button" class="button button-default button-small">Small button</button>
+        <button type="button" class="button button-default">Standard button</button>
+        <button type="button" class="button button-default button-large">Large button</button>
+      </div>
 
       <h2>Button groups</h2>
+<pre><code class="prettyprint">&lt;div class="button-group"&gt;
+  &lt;button type="button" class="button button-default"&gt;First&lt;/button&gt;
+  &lt;button type="button" class="button button-default"&gt;Second&lt;/button&gt;
+  &lt;button type="button" class="button button-default"&gt;Third&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+      <br>
       <div class="button-group">
-        <button type="button" class="button button-default">First</button>
-        <button type="button" class="button button-default">Second</button>
-        <button type="button" class="button button-default">Third</button>
+        <button type="button" class="button button-default">Default</button>
+        <button type="button" class="button button-default">Default</button>
+        <button type="button" class="button button-default">Default</button>
       </div>
       <br>
       <div class="button-group">
-        <button type="button" class="button button-default button-pilled">First</button>
-        <button type="button" class="button button-default button-pilled">Second</button>
-        <button type="button" class="button button-default button-pilled">Third</button>
+        <button type="button" class="button button-default button-pilled">Pilled</button>
+        <button type="button" class="button button-default button-pilled">Pilled</button>
+        <button type="button" class="button button-default button-pilled">Pilled</button>
+      </div>
+      <br>
+      <div class="button-group">
+        <button type="button" class="button button-outline-primary">Outline</button>
+        <button type="button" class="button button-outline-primary">Outline</button>
+        <button type="button" class="button button-outline-primary">Outline</button>
       </div>
     </div>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </body>
 </html>
