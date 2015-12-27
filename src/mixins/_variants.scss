@@ -13,7 +13,8 @@
     }
 
     &:hover,
-    &:active {
+    &:active,
+    &.active {
       background-color: darken($theme-color, $gradient-modifier);
       border-color: darken($theme-color, $gradient-modifier * 2);
 

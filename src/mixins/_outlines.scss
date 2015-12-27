@@ -9,7 +9,8 @@
     border-color: $theme-color;
 
     &:hover,
-    &:active {
+    &:active,
+    &.active {
       background-color: $theme-color;
       color: white;
     }
