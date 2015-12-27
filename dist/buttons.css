@@ -22,7 +22,7 @@
   border-color: lightgray;
   background: linear-gradient(to top, #ececec 0%, white 100%);
 }
-.button-default:hover, .button-default:active {
+.button-default:hover, .button-default:active, .button-default.active {
   background-color: lightgray;
   border-color: #b9b9b9;
   background: linear-gradient(to top, #ececec 0%, lightgray 100%);
@@ -34,7 +34,7 @@
   border-color: #0052cc;
   background: linear-gradient(to top, #0066ff 0%, #3385ff 100%);
 }
-.button-primary:hover, .button-primary:active {
+.button-primary:hover, .button-primary:active, .button-primary.active {
   background-color: #0052cc;
   border-color: #003d99;
   background: linear-gradient(to top, #0066ff 0%, #0052cc 100%);
@@ -46,7 +46,7 @@
   border-color: #006600;
   background: linear-gradient(to top, #009900 0%, #00cc00 100%);
 }
-.button-success:hover, .button-success:active {
+.button-success:hover, .button-success:active, .button-success.active {
   background-color: #006600;
   border-color: #003300;
   background: linear-gradient(to top, #009900 0%, #006600 100%);
@@ -58,7 +58,7 @@
   border-color: #cc7a00;
   background: linear-gradient(to top, #ff9900 0%, #ffad33 100%);
 }
-.button-warning:hover, .button-warning:active {
+.button-warning:hover, .button-warning:active, .button-warning.active {
   background-color: #cc7a00;
   border-color: #995c00;
   background: linear-gradient(to top, #ff9900 0%, #cc7a00 100%);
@@ -70,7 +70,7 @@
   border-color: #cc0000;
   background: linear-gradient(to top, #ff0000 0%, #ff3333 100%);
 }
-.button-danger:hover, .button-danger:active {
+.button-danger:hover, .button-danger:active, .button-danger.active {
   background-color: #cc0000;
   border-color: #990000;
   background: linear-gradient(to top, #ff0000 0%, #cc0000 100%);
@@ -86,7 +86,7 @@
   color: #0066ff;
   border-color: #0066ff;
 }
-.button-outline-primary:hover, .button-outline-primary:active {
+.button-outline-primary:hover, .button-outline-primary:active, .button-outline-primary.active {
   background-color: #0066ff;
   color: white;
 }
@@ -96,7 +96,7 @@
   color: #009900;
   border-color: #009900;
 }
-.button-outline-success:hover, .button-outline-success:active {
+.button-outline-success:hover, .button-outline-success:active, .button-outline-success.active {
   background-color: #009900;
   color: white;
 }
@@ -106,7 +106,7 @@
   color: #ff9900;
   border-color: #ff9900;
 }
-.button-outline-warning:hover, .button-outline-warning:active {
+.button-outline-warning:hover, .button-outline-warning:active, .button-outline-warning.active {
   background-color: #ff9900;
   color: white;
 }
@@ -116,7 +116,7 @@
   color: #ff0000;
   border-color: #ff0000;
 }
-.button-outline-danger:hover, .button-outline-danger:active {
+.button-outline-danger:hover, .button-outline-danger:active, .button-outline-danger.active {
   background-color: #ff0000;
   color: white;
 }
@@ -141,6 +141,10 @@
 .button-group > .button {
   border-radius: 0;
   float: left;
+  position: relative;
+}
+.button-group > .button:hover, .button-group > .button:focus, .button-group > .button:active, .button-group > .button.active {
+  z-index: 2;
 }
 .button-group > .button + .button {
   margin-left: -1px;
