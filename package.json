@@ -1,7 +1,7 @@
 {
   "name": "buttons",
-  "version": "1.0.0",
-  "description": "The ultimate CSS button library",
+  "version": "0.1.0",
+  "description": "Styles for buttons",
   "license": "MIT",
   "author": {
     "name": "Nils Sommer",
